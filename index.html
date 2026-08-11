@@ -1,0 +1,146 @@
+<html>
+  <head>
+     <title>My First Website</title>
+
+     <style>
+       body{
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: lightblue;
+        text-align: center;
+
+
+       }
+       header{
+        background-color: darkblue;
+        color: white;
+        padding: 25px;
+       }
+
+       nav {
+          background-color: white;
+          padding: 15px;
+       }
+
+       nav a{
+         margin: 15px;
+         text-decoration: none;
+         color: darkblue;
+         font-weight: bold;
+       }
+       section{
+          padding: 40px;
+       }
+       .box{
+        background-color: white;
+        margin: 20px auto;
+        padding: 25px;
+        max-width: 600px;
+        border-radius: 15px;
+       }
+
+       button{
+        background-color: blue;
+        color: white;
+        padding: 12px 25px;
+        border: none; 
+        border-radius: 8px;
+        cursor: pointer;
+
+       }
+       footer{
+          background-color: blue;
+          color: white;
+          padding: 15px;
+       }
+
+      input, textarea {
+        width: 80%;
+        padding: 10px;
+        border: 1px solid gray;
+        border-radius: 8px
+      } 
+      textarea{
+        resize: none;
+      }
+
+      
+
+
+  
+       
+     </style>
+  </head>
+    
+  <body>
+    <header> 
+         <h1> Welcome to My Website</h1>
+         <p1> My First Web Development project</p1>
+
+    </header>
+    
+    <nav>
+       <a href="#home">Home</a>
+       <a href="#about">About Me</a>
+       <a href="#conact">Contact</a>
+    </nav>
+    <section id="home">
+      <div class="box">
+        <h1>Welcome!👋</h1>
+        <h2>My First Website</h2>
+        <p>
+          Welcome o my personal website.
+          I am learning Web Development and coding.
+        </p>
+
+        <button onclick="alert('Hello! Welcome to my website')">
+          Click Me
+        </button>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="box">
+        <h2>About Me</h2>
+        <p>I am learning Web Development.</p>
+              <p>I am learning HTML, CSS and JavaScipt.</p>
+              <p>I am Computer Science student.</p>
+              <p>I Love learning coding and technology.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+     <div class="box">
+       <h2>Contact Me</h2>
+
+       <form
+    onsubmit="sendMessage(event)"
+
+           <input type="text"
+           placeholder="Harshita Maurya" required>
+           <br><br>
+
+           <input type="email"
+           placeholder="harshitamaurya0101@gmail.com" required>
+           <br><br>
+
+           <textarea placeholder="Hello, I am learning wed development. This is my first website."
+           rows="5" required></textarea>
+           <br><br>
+           <button type="submit">Send Message </button>
+     </form>
+
+     </div>
+    </section>
+    
+    <footer>
+      <p>© 2026 My Website</p>
+    </footer>
+    <script> 
+      function sendMessage(event) {
+        event.preventDefault();
+        alert("Thank you! Your message has been submitted.");
+      }
+    </script>
+  </body>
+</html>
